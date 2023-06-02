@@ -14,7 +14,7 @@ public class Ator {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //integer pq o professor declarou como int
+
     private Integer id;
     private String nomeator;
 
