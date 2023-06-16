@@ -19,8 +19,10 @@ import java.util.List;
 @RequestMapping("atores")
 
 public class AtorResource {
+
 @Autowired
     private AtorRepository atorRepository;
+
     @GetMapping("/todos")
     public List<Ator> listarTodosAtores(){
        return  atorRepository.findAll(Sort.by("nomeator").ascending());
